@@ -396,10 +396,6 @@
                 <p><strong>3. Media:</strong> Gráficos (Core Graphics, Metal), audio y video.</p>
                 <p><strong>4. Cocoa Touch:</strong> Framework de UI, gestos táctiles, notificaciones.</p>
             </div>
-
-            <div class="image-placeholder">
-                🖼️ Diagrama: Comparativa de Arquitecturas Android vs iOS
-            </div>
         </div>
 
         <!-- Aplicaciones Nativas y Multiplataforma -->
@@ -469,9 +465,6 @@
                 <li><strong>Kotlin Multiplatform:</strong> Compartir lógica en Kotlin</li>
             </ul>
 
-            <div class="image-placeholder">
-                🖼️ Tabla Comparativa: Nativo vs Multiplataforma (Performance, Costo, Tiempo)
-            </div>
         </div>
 
         <!-- Hardware de Dispositivos Móviles -->
@@ -558,9 +551,6 @@
                 <li><strong>Resoluciones variables:</strong> Diseñar interfaces escalables</li>
             </ul>
 
-            <div class="image-placeholder">
-                🖼️ Infografía: Anatomía Interna de un Smartphone Moderno
-            </div>
         </div>
 
         <!-- Lenguajes de Programación -->
@@ -669,10 +659,6 @@ print("Hola \(usuario.nombre)")</div>
                     </ul>
                 </div>
             </div>
-
-            <div class="image-placeholder">
-                🖼️ Gráfico: Popularidad de Lenguajes para Desarrollo Móvil 2025
-            </div>
         </div>
 
         <!-- Entornos y Herramientas de Desarrollo Nativo -->
@@ -772,9 +758,6 @@ print("Hola \(usuario.nombre)")</div>
                 </div>
             </div>
 
-            <div class="image-placeholder">
-                🖼️ Screenshot: Interfaces de Android Studio y Xcode
-            </div>
         </div>
 
         <!-- Diseño de Interfaces con Controles -->
@@ -897,9 +880,6 @@ struct FormularioView: View {
     }
 }</div>
 
-            <div class="image-placeholder">
-                🖼️ Mockup: Ejemplos de Controles UI en Android e iOS
-            </div>
         </div>
 
         <!-- Guías de Estilo y Bibliotecas -->
@@ -1107,9 +1087,6 @@ class UsuarioActivity : AppCompatActivity() {
     }
 }</div>
 
-            <div class="image-placeholder">
-                🖼️ Diagrama: Comparativa de Arquitecturas MVC, MVP, MVVM y Clean
-            </div>
         </div>
 
         <!-- Herramientas de Control de Versiones -->
@@ -1255,287 +1232,6 @@ Pods/
 *.ipa
 *.dSYM.zip</div>
 
-            <div class="image-placeholder">
-                🖼️ Diagrama: Flujo de Trabajo Git Flow vs GitHub Flow
-            </div>
-        </div>
-<!-- Arquitecturas y Patrones de Diseño -->
-        <div class="content-section">
-            <h2>🏗️ Arquitecturas y Patrones de Diseño</h2>
-
-            <h3>Patrones de Arquitectura Móvil</h3>
-            <p>Los patrones de arquitectura ayudan a organizar el código de manera escalable y mantenible:</p>
-
-            <div class="grid-2">
-                <div class="card">
-                    <h4>🔷 MVC (Model-View-Controller)</h4>
-                    <p><strong>Estructura tradicional de tres capas:</strong></p>
-                    <ul>
-                        <li><strong>Model:</strong> Lógica de negocio y datos</li>
-                        <li><strong>View:</strong> Interfaz de usuario</li>
-                        <li><strong>Controller:</strong> Intermediario entre Model y View</li>
-                    </ul>
-                    <p><strong>Ventajas:</strong> Separación clara, fácil de entender</p>
-                    <p><strong>Uso:</strong> iOS tradicional (UIKit)</p>
-                </div>
-
-                <div class="card">
-                    <h4>🔶 MVVM (Model-View-ViewModel)</h4>
-                    <p><strong>Patrón moderno con data binding:</strong></p>
-                    <ul>
-                        <li><strong>Model:</strong> Datos y lógica de negocio</li>
-                        <li><strong>View:</strong> UI declarativa</li>
-                        <li><strong>ViewModel:</strong> Prepara datos para la vista</li>
-                    </ul>
-                    <p><strong>Ventajas:</strong> Testeable, reactividad, separación UI/lógica</p>
-                    <p><strong>Uso:</strong> Android (Jetpack), SwiftUI, Flutter</p>
-                </div>
-
-                <div class="card">
-                    <h4>🔸 MVP (Model-View-Presenter)</h4>
-                    <p><strong>Variante de MVC más testeable:</strong></p>
-                    <ul>
-                        <li><strong>Model:</strong> Gestión de datos</li>
-                        <li><strong>View:</strong> UI pasiva (solo muestra)</li>
-                        <li><strong>Presenter:</strong> Lógica de presentación</li>
-                    </ul>
-                    <p><strong>Ventajas:</strong> Altamente testeable, View simple</p>
-                    <p><strong>Uso:</strong> Android tradicional</p>
-                </div>
-
-                <div class="card">
-                    <h4>🔺 Clean Architecture</h4>
-                    <p><strong>Arquitectura en capas concéntricas:</strong></p>
-                    <ul>
-                        <li><strong>Entities:</strong> Objetos de negocio</li>
-                        <li><strong>Use Cases:</strong> Reglas de aplicación</li>
-                        <li><strong>Interface Adapters:</strong> Conversores</li>
-                        <li><strong>Frameworks:</strong> UI, DB, APIs</li>
-                    </ul>
-                    <p><strong>Ventajas:</strong> Independencia, escalabilidad</p>
-                </div>
-            </div>
-
-            <h3>Patrones de Diseño Comunes</h3>
-
-            <div class="highlight-box">
-                <h4>📋 Patrones Creacionales</h4>
-                <ul>
-                    <li><strong>Singleton:</strong> Una sola instancia global (ej: gestor de base de datos)</li>
-                    <li><strong>Factory:</strong> Creación de objetos sin especificar clase exacta</li>
-                    <li><strong>Builder:</strong> Construcción paso a paso de objetos complejos</li>
-                </ul>
-            </div>
-
-            <div class="highlight-box">
-                <h4>🔗 Patrones Estructurales</h4>
-                <ul>
-                    <li><strong>Adapter:</strong> Compatibilidad entre interfaces incompatibles</li>
-                    <li><strong>Decorator:</strong> Añadir funcionalidad sin modificar código</li>
-                    <li><strong>Facade:</strong> Interfaz simplificada para sistema complejo</li>
-                </ul>
-            </div>
-
-            <div class="highlight-box">
-                <h4>⚡ Patrones de Comportamiento</h4>
-                <ul>
-                    <li><strong>Observer:</strong> Notificación automática de cambios (ej: LiveData, Combine)</li>
-                    <li><strong>Strategy:</strong> Algoritmos intercambiables</li>
-                    <li><strong>Repository:</strong> Abstracción de fuentes de datos</li>
-                </ul>
-            </div>
-
-            <h3>Ejemplo de Implementación MVVM</h3>
-
-            <div class="code-example">// Ejemplo MVVM en Kotlin (Android)
-
-// Model
-data class Usuario(
-    val id: Int,
-    val nombre: String,
-    val email: String
-)
-
-// ViewModel
-class UsuarioViewModel : ViewModel() {
-    private val _usuarios = MutableLiveData<List<Usuario>>()
-    val usuarios: LiveData<List<Usuario>> = _usuarios
-    
-    fun cargarUsuarios() {
-        viewModelScope.launch {
-            val data = repository.obtenerUsuarios()
-            _usuarios.value = data
-        }
-    }
-}
-
-// View (Activity/Fragment)
-class UsuarioActivity : AppCompatActivity() {
-    private val viewModel: UsuarioViewModel by viewModels()
-    
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        
-        viewModel.usuarios.observe(this) { usuarios ->
-            // Actualizar UI
-            adapter.submitList(usuarios)
-        }
-        
-        viewModel.cargarUsuarios()
-    }
-}</div>
-
-            <div class="image-placeholder">
-                🖼️ Diagrama: Comparativa de Arquitecturas MVC, MVP, MVVM y Clean
-            </div>
-        </div>
-
-        <!-- Herramientas de Control de Versiones -->
-        <div class="content-section">
-            <h2>🔄 Herramientas de Control de Versiones</h2>
-
-            <h3>Git - Sistema de Control de Versiones Distribuido</h3>
-            <p>Git es la herramienta estándar de la industria para control de versiones en desarrollo móvil.</p>
-
-            <div class="highlight-box">
-                <h4>📦 Comandos Básicos de Git</h4>
-                <div class="code-example"># Inicializar repositorio
-git init
-
-# Clonar repositorio existente
-git clone https://github.com/usuario/proyecto.git
-
-# Ver estado de archivos
-git status
-
-# Añadir archivos al staging
-git add .
-git add archivo.kt
-
-# Commit de cambios
-git commit -m "Descripción del cambio"
-
-# Subir cambios al remoto
-git push origin main
-
-# Obtener cambios del remoto
-git pull origin main
-
-# Crear nueva rama
-git checkout -b feature/nueva-funcionalidad
-
-# Cambiar entre ramas
-git checkout main
-
-# Fusionar ramas
-git merge feature/nueva-funcionalidad</div>
-            </div>
-
-            <h3>Plataformas de Alojamiento de Repositorios</h3>
-
-            <div class="grid-2">
-                <div class="card">
-                    <h4>🐙 GitHub</h4>
-                    <p><strong>Plataforma más popular para desarrollo colaborativo</strong></p>
-                    <ul>
-                        <li>Repositorios públicos y privados</li>
-                        <li>GitHub Actions (CI/CD)</li>
-                        <li>Pull Requests y Code Review</li>
-                        <li>Issues y Project Management</li>
-                        <li>GitHub Pages para documentación</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h4>🦊 GitLab</h4>
-                    <p><strong>Plataforma DevOps completa</strong></p>
-                    <ul>
-                        <li>CI/CD integrado</li>
-                        <li>Auto DevOps</li>
-                        <li>Container Registry</li>
-                        <li>Opción self-hosted</li>
-                        <li>Wiki y snippets</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h4>🔷 Bitbucket</h4>
-                    <p><strong>Integración con Atlassian</strong></p>
-                    <ul>
-                        <li>Integración con Jira</li>
-                        <li>Pipelines CI/CD</li>
-                        <li>Repositorios privados gratuitos</li>
-                        <li>Confluence para documentación</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h4>☁️ Azure DevOps</h4>
-                    <p><strong>Plataforma de Microsoft</strong></p>
-                    <ul>
-                        <li>Azure Repos</li>
-                        <li>Azure Pipelines</li>
-                        <li>Integración con Visual Studio</li>
-                        <li>Boards para gestión ágil</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h3>Estrategias de Branching</h3>
-
-            <div class="highlight-box">
-                <h4>🌿 Git Flow</h4>
-                <p><strong>Modelo de branching para proyectos con releases:</strong></p>
-                <ul>
-                    <li><strong>main/master:</strong> Código de producción estable</li>
-                    <li><strong>develop:</strong> Rama de desarrollo principal</li>
-                    <li><strong>feature/*:</strong> Nuevas funcionalidades</li>
-                    <li><strong>release/*:</strong> Preparación de releases</li>
-                    <li><strong>hotfix/*:</strong> Correcciones urgentes de producción</li>
-                </ul>
-            </div>
-
-            <div class="highlight-box">
-                <h4>🚀 GitHub Flow</h4>
-                <p><strong>Modelo simplificado para despliegue continuo:</strong></p>
-                <ul>
-                    <li><strong>main:</strong> Siempre desplegable</li>
-                    <li><strong>feature branches:</strong> Desde main, merge via PR</li>
-                    <li>Deploy inmediato después del merge</li>
-                </ul>
-            </div>
-
-            <h3>Buenas Prácticas</h3>
-            <ul>
-                <li><strong>Commits atómicos:</strong> Un cambio lógico por commit</li>
-                <li><strong>Mensajes descriptivos:</strong> "Añade validación de email en login"</li>
-                <li><strong>.gitignore:</strong> Excluir archivos generados (build/, .gradle/, .DS_Store)</li>
-                <li><strong>Pull antes de Push:</strong> Evitar conflictos</li>
-                <li><strong>Code Reviews:</strong> Revisar código antes de mergear</li>
-                <li><strong>Tags para releases:</strong> Marcar versiones (v1.0.0, v1.1.0)</li>
-            </ul>
-
-            <div class="code-example"># Ejemplo .gitignore para Android
-*.iml
-.gradle
-/local.properties
-/.idea
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-
-# Ejemplo .gitignore para iOS
-*.xcuserstate
-xcuserdata/
-DerivedData/
-Pods/
-*.ipa
-*.dSYM.zip</div>
-
-            <div class="image-placeholder">
-                🖼️ Diagrama: Flujo de Trabajo Git Flow vs GitHub Flow
-            </div>
         </div>
 
         <!-- Persistencia y Acceso a Datos -->
@@ -1759,9 +1455,6 @@ class UsuarioRepository(
                 <li><strong>Conflict Resolution:</strong> Estrategias para resolver conflictos (last-write-wins, merge)</li>
             </ul>
 
-            <div class="image-placeholder">
-                🖼️ Diagrama: Arquitectura de Persistencia con Repository Pattern
-            </div>
         </div>
 
         <!-- Gestión de Sensores -->
@@ -1838,10 +1531,6 @@ window.addEventListener('devicemotion', (event) => {
 
             <p><strong>3. Procesamiento de Información:</strong></p>
             <p>Los datos crudos del sensor deben ser procesados y convertidos en información útil para la aplicación.</p>
-
-            <div class="image-placeholder">
-                🖼️ Diagrama: Flujo de Procesamiento de Datos de Sensores
-            </div>
         </div>
 
         <!-- Servicios y Notificaciones -->
@@ -1897,10 +1586,6 @@ window.addEventListener('devicemotion', (event) => {
                     </ul>
                 </div>
             </div>
-
-            <div class="image-placeholder">
-                🖼️ Diagrama: Arquitectura de Servicios en la Nube
-            </div>
         </div>
 
         <!-- Librerías y Toolkits -->
@@ -1929,10 +1614,6 @@ window.addEventListener('devicemotion', (event) => {
                     <h4>📲 Xamarin</h4>
                     <p>Plataforma de Microsoft para desarrollo con C# y .NET.</p>
                 </div>
-            </div>
-
-            <div class="image-placeholder">
-                🖼️ Comparativa: Frameworks de Desarrollo Móvil
             </div>
         </div>
 
@@ -1982,9 +1663,6 @@ window.addEventListener('devicemotion', (event) => {
                 <li><strong>Biometría:</strong> Huellas y reconocimiento facial</li>
             </ul>
 
-            <div class="image-placeholder">
-                🖼️ Diagrama: Arquitectura de Seguridad en Apps
-            </div>
         </div>
 
         <!-- Empaquetado y Despliegue -->
@@ -2024,10 +1702,6 @@ window.addEventListener('devicemotion', (event) => {
                 <li><strong>TestFlight:</strong> Beta testing para iOS</li>
                 <li><strong>Firebase App Distribution:</strong> Distribución beta</li>
             </ul>
-
-            <div class="image-placeholder">
-                🖼️ Flujo: Proceso de Empaquetado y Distribución
-            </div>
         </div>
 
         <!-- Plataformas y Distribución -->
@@ -2071,10 +1745,6 @@ window.addEventListener('devicemotion', (event) => {
                 <li>Grupo limitado de testers invitados</li>
                 <li>Mayor control sobre feedback</li>
             </ul>
-
-            <div class="image-placeholder">
-                🖼️ Infografía: Proceso de Publicación en App Stores
-            </div>
         </div>
 
     <!-- Referencias (siempre al final) -->
